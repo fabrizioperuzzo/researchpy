@@ -22,7 +22,7 @@ def summary_cont(group1):
         #### PUTTING THE INFORMATION INTO A DATAFRAME #####
         table = pandas.DataFrame(numpy.zeros(shape= (1,7)),
                          columns = ['Variable', 'N', 'Mean', 'SD', 'SE',
-                                    '95% Conf.', 'Interval'])
+                                    '95% CI inf', '95% CI sup'])
 
         # Setting up the first column (Variable names)
         table.iloc[0,0] = group1.name
